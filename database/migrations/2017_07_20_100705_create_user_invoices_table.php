@@ -18,7 +18,7 @@ class CreateUserInvoicesTable extends Migration
             $table->unsignedInteger('order_id'); //Foreign key to order id from order table
             $table->enum('status', ['open', 'pending', 'complete']);
             //open: order only, pending:verified user, completed:paid user
-            $table->timestamps('date');
+            
             $table->timestamps();
         });
     }
